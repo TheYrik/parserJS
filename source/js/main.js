@@ -27,7 +27,7 @@ async function parsingCars(userURL) {
 
 
         for (let i = 0; i < itemsList.length; i++) {
-            const item = itemsList[index];
+            const item = itemsList[i];
             const carName = item.querySelector(".link-text");
             const yearDiv = item.querySelector(".listing-item__params div:first-child");
             const yearNumber = Number(yearDiv.textContent.replace(/\D/g, ""));
